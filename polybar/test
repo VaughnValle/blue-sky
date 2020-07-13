@@ -1,0 +1,435 @@
+;==========================================================
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;			https://github.com/polybar/polybar
+;==========================================================
+
+[colors]
+background        = #1d1d1d
+background-alt    = ${xrdb:foreground:#222}
+
+foreground        = ${xrdb:foreground:#222}
+foreground-alt    = ${xrdb:background:#222}
+
+shade0            = ${xrdb:color7:#222}
+shade1            = ${xrdb:color7:#222}
+shade2            = ${xrdb:color7:#222}
+shade3            = ${xrdb:color7:#222}
+shade4            = ${xrdb:color7:#222}
+shade5            = ${xrdb:color7:#222}
+shade6            = ${xrdb:color7:#222}
+shade7            = #ffffff
+shade8            = ${xrdb:color8:#222}
+
+[constants]
+padding = 1
+
+[bar/right]
+background-0          = #e0654d
+background-1          = #bc5c6e
+border-color          = ${colors.foreground}
+border-size           = 0
+border-transparent    = true
+bottom                = false
+cursor-click          = pointer
+cursor-scroll         = ns-resize
+fixed-center          = true
+foreground            = ${colors.foreground}
+height                = 42
+line-color            = #f00
+line-size             = 0
+module-margin-left    = 0
+module-margin-right   = 0
+monitor               = DP-1-1
+monitor-fallback      = eDP-1
+offset-x              = 90%:-16
+offset-y              = 16
+override-redirect     = true
+padding-left          = 0
+padding-right         = 0
+radius                = 21
+scroll-down           = i3wm-wsprev
+scroll-up             = i3wm-wsnext
+tray-position         = none
+width                 = 10%
+
+modules-center         = pulseaudio wlan battery  
+modules-right = date
+
+font-0 = mononoki Nerd Font:weight=bold:fontformat=truetype:size=19:antialias=true;4
+font-1 = Roboto Condensed:fontformat=truetype:size=16:antialias=true;4
+
+[bar/middle]
+inherit = bar/right
+
+offset-x              = 40%
+offset-y              = 16
+width                 = 20%
+background-0    = #1d1d1d
+background-1    = #1d1d1d
+modules-left        = 
+modules-center        = i3
+modules-right        = 
+;    _          _   _                
+;   | |__  __ _| |_| |_ ___ _ _ _  _ 
+;   | '_ \/ _` |  _|  _/ -_) '_| || |
+;   |_.__/\__,_|\__|\__\___|_|  \_, |
+;                               |__/ 
+
+[module/battery]
+adapter                                 = ADP1
+battery                                 = BAT1
+
+format-charging                         = <label-charging>
+format-charging-foreground              = #1d1d1d
+
+format-discharging                      = <ramp-capacity><label-discharging>
+format-discharging-foreground           = #1d1d1d
+
+format-full-foreground                  = #1d1d1d
+
+
+
+full-at                                 = 99
+
+label-charging                          = 
+format-charging-padding                 = ${constants.padding}
+
+label-discharging                       = 
+format-discharging-padding              = ${constants.padding}
+
+label-full                              = 
+format-full-padding                     = ${constants.padding}
+
+poll-interval                           = 5
+
+type                                    = internal/battery
+
+ramp-capacity-0                         = 
+ramp-capacity-1                         = 
+ramp-capacity-2                         = 
+ramp-capacity-3                         = 
+ramp-capacity-4                         = 
+ramp-capacity-5                         = 
+ramp-capacity-6                         = 
+ramp-capacity-7                         = 
+ramp-capacity-8                         = 
+ramp-capacity-9                         = 
+
+;                 
+;    __ _ __ _  _ 
+;   / _| '_ \ || |
+;   \__| .__/\_,_|
+;      |_|        
+
+[module/cpu]
+
+format-foreground       = ${colors.shade7}
+format-label            = <label>
+format-padding          = ${constants.padding}
+
+interval                = 2
+
+label                   = cpu %percentage%% 
+label-font              = 2
+
+ramp-coreload-0         = ▁
+ramp-coreload-1         = ▂
+ramp-coreload-2         = ▃
+ramp-coreload-3         = ▄
+ramp-coreload-4         = ▅
+ramp-coreload-5         = ▆
+ramp-coreload-6         = ▇
+ramp-coreload-7         = █
+ramp-coreload-spacing   = 1
+
+type                    = internal/cpu
+
+;     _      _       
+;  __| |__ _| |_ ___ 
+; / _` / _` |  _/ -_)
+; \__,_\__,_|\__\___|
+                    
+[module/date]
+date                        = %D
+
+format                      = <label>
+
+format-font = 2
+interval                    = 1.0
+
+label                       = %{A6:time-admin:}  %time%   %{A}
+format-background            = #1d1d1d
+format-foreground = #ffffff
+
+;time                        = %a %m/%e    %I : %M  %p
+time                        = %I:%M%P
+time-alt                    = %A, %B %e  %I:%M:%S %p
+
+type                        = internal/date
+
+;   __ _ _                
+;  / _(_) |___ ____  _ ___
+; |  _| | / -_|_-< || (_-<
+; |_| |_|_\___/__/\_, /__/
+;                 |__/    
+
+[module/filesystem]
+fixed-values                = true
+
+format-mounted              = <label-mounted>
+format-mounted-foreground   = ${colors.shade4}
+
+format-unmounted            = <label-unmounted>
+
+interval                    = 10
+
+label-mounted               =  %mountpoint% %percentage_used%%
+label-mounted-font          = 2
+
+label-unmounted             = %mountpoint%: not mounted
+label-unmounted-foreground  = #55
+
+mount-0                     = /
+mount-1                     = /mnt/sdb1
+mount-2                     = /mnt/sdb4
+
+spacing                     = 4
+
+type                        = internal/fs
+
+;                   
+;    __ _ _ __ _  _ 
+;   / _` | '_ \ || |
+;   \__, | .__/\_,_|
+;   |___/|_|        
+
+[module/gpu]
+exec                = system-nvidia-smi.sh
+
+format-foreground   = ${colors.shade7}
+format-label        = <label>
+format-padding      = ${constants.padding}
+interval            = 10
+
+label               = gpu %output% 
+label-font          = 2
+
+type                = custom/script
+
+;  _ ____             
+; (_)__ /_ __ ___ __  
+; | ||_ \ V  V / '  \ 
+; |_|___/\_/\_/|_|_|_|
+                     
+[module/i3]
+format                      = <label-state> <label-mode>
+index-sort                  = true
+pin-workspaces              = false
+type                        = internal/i3
+wrapping-scroll             = false
+
+;strip-wsnumbers            = true
+;1browser
+;2code
+;3code
+;4files
+;5media
+;6torrents
+;7design
+;8messaging
+;9
+;0
+ws-icon-0                   = 1;爵
+ws-icon-1                   = 2;
+ws-icon-2                   = 3;
+ws-icon-3                   = 4;
+ws-icon-4                   = 5;
+ws-icon-5                   = 6;
+ws-icon-6                   = 7;
+ws-icon-7                   = 8;
+ws-icon-8                   = 9;
+ws-icon-9                   = 10;
+
+label-focused-font = 1
+label-unfocused-font = 1
+label-urgent-font = 1
+label-mode-font = 2
+
+label-mode                  = 煉 %mode%
+label-mode-background       = ${colors.shade4}
+label-mode-foreground       = #ffffff
+label-mode-padding          = 1
+
+label-focused               = %icon%
+label-focused-background    = ${colors.background}
+label-focused-foreground    = #ffffff
+label-focused-padding       = 1
+
+label-unfocused             = %icon%
+label-unfocused-background  = ${colors.background}
+label-unfocused-foreground  = #f96f45
+label-unfocused-padding     = 1
+
+label-urgent                = %icon%
+label-urgent-background     = ${colors.background}
+label-urgent-foreground     = #e65245
+label-urgent-padding        = 1
+
+label-visible               = %icon%
+label-visible-foreground    = ${colors.shade2}
+label-visible-padding       = 1
+
+;              _         
+;    _ __ _  _| |___ ___ 
+;   | '_ \ || | (_-</ -_)
+;   | .__/\_,_|_/__/\___|
+;   |_|                  
+
+[module/pulseaudio]
+format-muted                      = <label-muted>
+format-muted-foreground           = #1d1d1d
+format-muted-background-0    = #6C6AF2
+format-muted-background-1    = #4648FB
+
+format-volume                     = <ramp-volume>
+format-volume-foreground          = #1d1d1d
+format-volume-background-0    = #6C6AF2
+format-volume-background-1    = #4648FB
+
+interval                          = 5
+
+label-muted                       = %{A3:pavucontrol:}婢%{A}
+format-muted-padding              = ${constants.padding}
+label-volume                      = %{A3:pavucontrol:}%{A}
+format-volume-padding             = ${constants.padding}
+
+ramp-volume-0                     = %{A3:pavucontrol:}奄%{A}
+ramp-volume-1                     = %{A3:pavucontrol:}奔%{A}
+ramp-volume-2                     = %{A3:pavucontrol:}墳%{A}
+
+sink                              = alsa_output.pci-0000_00_1f.3.hdmi-stereo-extra1
+
+type                              = internal/pulseaudio
+
+use-ui-max                        = false
+
+;                   
+;    _ _ __ _ _ __  
+;   | '_/ _` | '  \ 
+;   |_| \__,_|_|_|_|
+;                   
+
+[module/memory]
+format-foreground   = ${colors.shade7}
+format-label        = <label>
+format-padding      = ${constants.padding}
+
+interval            = 2
+
+label               = ram %percentage_used%% 
+label-font          = 2
+
+type                = internal/memory
+
+;  _        _            _                 _   
+; | |_ __ _| |_____ __ _| |__ _ _ ___ __ _| |__
+; |  _/ _` | / / -_) _` | '_ \ '_/ -_) _` | / /
+;  \__\__,_|_\_\___\__,_|_.__/_| \___\__,_|_\_\
+                                              
+[module/takeabreak]
+click-left          = ~/bin/takeabreak/starttakeabreak.sh
+click-right         = ~/bin/takeabreak/stoptakeabreak.sh
+
+format              = ${env:TAKEABREAK_LABEL}
+format-font         = 0
+format-foreground   = ${colors.foreground}
+format-background   = ${colors.shade1}
+format-prefix       = 
+
+hook-0              = cat ~/bin/takeabreak/sample
+hook-1              = echo " Time for a break! "
+hook-2              = echo " No timer running "
+
+initial             = 3
+
+type                = custom/ipc
+
+;    _                  
+;   | |_ ___ _ __  _ __ 
+;   |  _/ -_) '  \| '_ \
+;    \__\___|_|_|_| .__/
+;                 |_|   
+
+[module/temperature]
+format                  = <label>
+
+format-font             = 2
+format-warn-font        = 2
+format-foreground       = ${colors.shade7}
+format-warn             = <label-warn>
+format-padding          = ${constants.padding}
+format-warn-padding     = ${constants.padding}
+
+label                   = %temperature-c%
+label-warn              = %temperature-c%
+label-warn-foreground   = #df3b3d
+
+thermal-zone            = 4
+
+type                    = internal/temperature
+
+warn-temperature        = 60
+
+;           _           
+;   __ __ _| |__ _ _ _  
+;   \ V  V / / _` | ' \ 
+;    \_/\_/|_\__,_|_||_|
+;                       
+
+[module/wlan]
+format-connected                      = %{A1:tilix -e wicd-curses:}直<label-connected>%{A}
+format-connected-foreground           = #1d1d1d
+format-connected-background-0    = #6C6AF2
+format-connected-background-1    = #4648FB
+
+format-disconnected                   = %{A1:tilix -e wicd-curses:}睊%{A}
+format-disconnected-foreground        = #1d1d1d
+format-disconnected-background-0    = #6C6AF2
+format-disconnected-background-1    = #4648FB
+
+interface                             = wlp2s0
+
+interval                              = 3.0
+
+label-connected                       = 
+format-connected-padding              = ${constants.padding}
+format-disconnected-padding           = ${constants.padding}
+
+
+type                                  = internal/network
+
+;          _   _   _              
+;  ___ ___| |_| |_(_)_ _  __ _ ___
+; (_-</ -_)  _|  _| | ' \/ _` (_-<
+; /__/\___|\__|\__|_|_||_\__, /__/
+;                        |___/    
+                                      
+[settings]
+;compositing-background = screen
+;compositing-background = xor
+;compositing-border     = over
+;pseudo-transparency    = true
+compositing-foreground  = source
+screenchange-reload     = true
+
+[global/wm]
+
+; vim:ft        = dosini
+  margin-bottom = 940
+  margin-top    = 940
+
