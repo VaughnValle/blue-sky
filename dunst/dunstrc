@@ -1,0 +1,83 @@
+[global]
+    font = lemon 8
+    allow_markup = yes
+    format = "%s\n%b"
+    sort = yes
+    indicate_hidden = yes
+    alignment = left
+    bounce_freq = 0
+    show_age_threshold = 60
+    word_wrap = yes
+    ignore_newline = no
+    geometry = "300x10-10+60"
+    ##transparency = 25
+    transparency = 0
+    idle_threshold = 120
+    monitor = 0
+    follow = mouse
+    sticky_history = yes
+    line_height = 5
+    separator_height = 0
+    padding = 10
+    horizontal_padding = 10
+    separator_color = #bfbfbf
+    startup_notification = false
+    show_indicators = no
+    dmenu = /usr/bin/dmenu -p dunst
+    browser = /usr/bin/google-chrome-beta -new-tab
+    icon_position = left
+    icon_folders = /home/vaughnvalle/.local/share/icons/ePapirus/24x24/panel:/home/vaughnvalle/.local/share/icons/ePapirus/apps:/home/vaughnvalle/.local/share/icons/ePapirus/devices:/home/vaughnvalle/.local/share/icons/ePapirus/actions
+
+[frame]
+    color = "#353e4b"
+    width = 0
+
+[shortcuts]
+    close = ctrl+space
+    close_all = ctrl+shift+space
+    context = ctrl+shift+period 
+
+[urgency_low]
+    background = "#353e4b"
+    foreground = "#ffffff"
+    timeout = 5
+
+[urgency_normal]
+    background = "#353e4b"
+    foreground = "#ffffff"
+    timeout = 5
+
+[urgency_critical]
+    background = "#353e4b"
+    foreground = "#ffffff"
+    timeout = 5
+
+[Messenger]
+    appname = Discord Canary
+    format = "<b>%s</b>\n%b"
+    new_icon = Discord
+
+[WMail]
+    appname = Electron
+    format = "<b>%s</b>\n%b"
+    new_icon = WMail
+    timeout = 2000
+
+[NCMPCPP]
+    appname = mpc
+    format = "<b>Now Playing:</b>\n%s\n%b"
+    #format = "<b>%s</b>\n%b"
+    new_icon = NCMPCPP
+    timeout = 10
+
+[Spotify]
+    appname = Spotify
+    format = "<b>Now Playing:</b>\n%s\n%b"
+    new_icon = /usr/share/app-info/icons/pop-artful-extra/64x64/spotify.png
+    timeout = 10
+
+[Transmission]
+    appname = Transmission
+    format = "<b>%s</b>\n%b"
+    new_icon = Transmission
+    timeout = 2000
