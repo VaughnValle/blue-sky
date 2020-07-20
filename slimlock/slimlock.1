@@ -1,0 +1,65 @@
+.TH slimlock 1 "June 10, 2011" "version 0.8"
+.SH NAME
+\fBslimlock\fP - Unholy Screen Locker
+\fB
+.SH SYNOPSIS
+.nf
+.fam C
+\fBslimlock\fP [-v]
+.fam T
+.fi
+.SH DESCRIPTION
+The Frankenstein's monster of screen lockers. Grafting SLiM and slock together
+leads to blood, tears, and locked screens.
+.SH OPTIONS
+.TP
+.B
+\fB-v\fP
+display version information
+.SH CONFIGURATION
+Slimlock reads the same configuration files you use for SLiM. It looks in \fICFGDIR/slim.conf\fP and \fICFGDIR/slimlock.conf\fP, where \fICFGDIR\fP is defined in the makefile. The options that are read from slim.conf are hidecursor, current_theme, background_color, and background_style, screenshot_cmd, and welcome_msg. See the SLiM docs for more information.
+
+slimlock.conf contains the following settings:
+
+.TP
+.B dpms_standby_timeout
+number of seconds of inactivity before the screen blanks.
+.BI "Default: " 60
+.TP 
+.B dpms_off_timeout
+number of seconds of inactivity before the screen is turned off.
+.BI "Default: " 600
+.TP
+.B wrong_passwd_timeout
+delay in seconds after an incorrect password is entered.
+.BI "Default: " 2
+.TP
+.B passwd_feedback_msg
+message to display after a failed authentication attempt.
+.BI "Default: " "Authentication failed"
+.TP
+.B passwd_feedback_capslock
+message to display after a failed authentication attempt if the CapsLock is on.
+.BI "Default: " "Authentication failed (CapsLock is on)"
+.TP
+.B show_username
+1 to show username on themes with single input field; 0 to disable.
+.BI "Default: " 1
+.TP
+.B show_welcome_msg
+1 to show SLiM's welcome message; 0 to disable.
+.BI "Default: " 0
+.TP
+.B tty_lock
+1 to disallow virtual terminals switching; 0 to allow.
+.BI "Default: " 1
+.TP
+.B bell
+1 to enable the bell on authentication failure; 0 to disable.
+.BI "Default: " 1
+.TP
+.B passwd_char
+Character to show when masking password.
+.BI "Default: " *
+.SH "SEE ALSO"
+.BR slim (1)
