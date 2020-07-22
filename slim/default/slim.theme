@@ -26,12 +26,14 @@ background_color        #edfefe
 
 input_panel_x           50%
 input_panel_y           50%
-input_name_x            665
-input_name_y            205
-input_pass_x            665
-input_pass_y            267
+#input_name_x            665
+#input_name_y            205
+input_name_x            630
+input_name_y            218
+input_pass_x            630
+input_pass_y            282
 input_font              Sans:size=14:dpi=75
-input_color             #63c5ea
+input_color             #b1e3ff
 
 username_msg            
 password_msg            
