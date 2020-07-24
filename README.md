@@ -60,7 +60,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 	- __Optional__: Configure the keybind in __sxhkdrc__ to your liking:
 
 			 vim ~/.config/sxhkd/sxhkdrc
-	   __NOTE__: Make sure the terminal emulator used in the config file is installed as the terminal will be the only way we can interact with bspwm upon startup after a fresh installation
+	   __NOTE__: Make sure the __terminal emulator__ used in the config file is installed as the terminal will be the only way we can interact with bspwm upon startup after a fresh installation
 
 
 ## Thanks for dropping by!
