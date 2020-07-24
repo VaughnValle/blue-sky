@@ -34,10 +34,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 			 
 			 mkdir ~/.config/bspwm
 			 cp examples/bspwmrc ~/.config/bspwm
-			 
-			 ## Make the rc file executable
 			 chmod +x ~/.config/bspwm/bspwmrc
-
 			 cd ..
 	- __Optional__: Configure __bspwmrc__ to your liking
 
