@@ -26,6 +26,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 			 cd ~/Downloads
 			 git clone https://github.com/baskerville/bspwm.git
 	- Compile and install __bspwm__:
+			 
 			 cd bspwm
 			 make
 			 sudo make install
