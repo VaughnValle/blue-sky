@@ -95,7 +95,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 	  __NOTE__: Default installation path is /usr/local, use this to change the install prefix:
 
 			 meson configure -Dprefix=<path> build
-7. Install Rofi(wip):
+7. Install Rofi:
 	- Install __required dependencies__:
 
 			 sudo apt install bison flex libstartup-notification0-dev check autotools-dev libpango1.0-dev librsvg2-bin librsvg2-dev libcairo2-dev libglib2.0-dev libxkbcommon-dev libxkbcommon-x11-dev libjpeg-dev
@@ -123,6 +123,15 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 	- Install __rofi__:
 
 			 sudo make install
+8. Install the vim editor:
 
+		 sudo apt install vim
+9. Install spotify:
+
+		 curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add - 
+		 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+		 sudo apt update && sudo apt install spotify-client
+10. Install spicetify:
+11. Install SLiM and slimlock:
 ## Thanks for dropping by!
 
