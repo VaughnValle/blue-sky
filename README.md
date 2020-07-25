@@ -58,6 +58,21 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 
 			 vim ~/.config/sxhkd/sxhkdrc
 	   __NOTE__: Make sure the __terminal emulator__ used in the config file is installed as the terminal will be the only way we can interact with bspwm upon startup after a fresh installation
+5. Install Polybar:
+	- Install required dependencies:
+
+			 sudo apt install build-essential git cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsoncpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev
+	- Clone the repository:
+	
+			 git clone --recursive https://github.com/polybar/polybar
+	- Compile and install:
+
+			 cd polybar
+			 mkdir build
+			 cd build
+			 cmake ..
+			 make -j$(nproc)
+			 sudo make install
 
 
 ## Thanks for dropping by!
