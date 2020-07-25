@@ -86,8 +86,29 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 			 ninja -C build
 	- Install:
 
+			 ## Default installation path is /usr/local, use
+			 meson configure -Dprefix=<path> build 
+			 ## To change the install prefix
+			 
 			 ninja -C build install
 			 cd ..
+
+7. Install Rofi:
+	- Install required dependencies:
+
+			 sudo apt install libpango-dev libpangocairo-dev libcairo-dev libcairo-xcb-dev libglib2.0-dev gmodule-2.0-dev gio-unix-2.0-devlibrsvg2.0 libstartup-notification-1.0-dev libxkbcommon-dev libxkbcommon-x11-dev libjpeg-dev libxcb-dev xcb-util-dev xcb-util-wm-dev xcb-util-xrm-dev
+	- Clone the repository:
+
+			 git clone https://github.com/davatorium/rofi.git
+	- Build:
+
+			 cd rofi
+			 mkdir build && cd build
+			 ../configure
+			 make
+	- Install:
+
+			 sudo make install
 
 ## Thanks for dropping by!
 
