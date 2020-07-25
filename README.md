@@ -57,7 +57,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 			 vim ~/.config/sxhkd/sxhkdrc
 	   __NOTE__: Make sure the __terminal emulator__ used in the config file is installed as the terminal will be the only way we can interact with bspwm upon startup after a fresh installation
 5. Install Polybar:
-	- Install required dependencies:
+	- Install __required__ dependencies:
 
 			 sudo apt install build-essential git cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsoncpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev
 	- Clone the repository:
@@ -72,7 +72,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 			 make -j$(nproc)
 			 sudo make install
 6. Install Picom:
-	- Install required dependencies:
+	- Install __required__ dependencies:
 
 			 sudo apt install libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-xinerama0-dev libpixman-1-dev libdbus-1-dev libconfig-dev libgl1-mesa-dev  libpcre2-dev  libevdev-dev uthash-dev libev-dev libx11-xcb-dev
 	- Clone the repository:
@@ -94,7 +94,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 			 cd ..
 
 7. Install Rofi:
-	- Install required dependencies:
+	- Install __required__ dependencies:
 
 			 sudo apt install libpango-dev libpangocairo-dev libcairo-dev libcairo-xcb-dev libglib2.0-dev gmodule-2.0-dev gio-unix-2.0-devlibrsvg2.0 libstartup-notification-1.0-dev libxkbcommon-dev libxkbcommon-x11-dev libjpeg-dev libxcb-dev xcb-util-dev xcb-util-wm-dev xcb-util-xrm-dev
 	- Clone the repository:
