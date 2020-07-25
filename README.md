@@ -25,6 +25,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 
 			 sudo apt install xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
 	- Clone the repository:
+
 			 git clone https://github.com/baskerville/bspwm.git
 	- Compile and install __bspwm__:
 			 
@@ -95,6 +96,10 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 			 
 			 sudo ninja -C build install
 			 cd ..
+	  __NOTE__: Default installation path is /usr/local, use:
+
+			 meson configure -Dprefix=<path> build
+		    to change the install prefix
 
 7. Install Rofi(wip):
 	- Install __required dependencies__:
