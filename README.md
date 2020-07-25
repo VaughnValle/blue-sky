@@ -90,17 +90,13 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 			 ninja -C build
 	- Install:
 
-			 ## Default installation path is /usr/local, use
-			 meson configure -Dprefix=<path> build 
-			 ## To change the install prefix
-			 
 			 sudo ninja -C build install
 			 cd ..
 	  __NOTE__: Default installation path is /usr/local, use:
 
 			 meson configure -Dprefix=<path> build
-		    to change the install prefix
 
+		    to change the install prefix
 7. Install Rofi(wip):
 	- Install __required dependencies__:
 
