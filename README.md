@@ -21,6 +21,9 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 
 		 sudo apt upgrade
 3. Install __bspwm__:
+	- Install __required dependencies__:
+
+			 sudo apt install xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
 	- Clone the repository:
 			 git clone https://github.com/baskerville/bspwm.git
 	- Compile and install __bspwm__:
@@ -50,7 +53,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 	- Copy __sxhkd configuration files__:
 			
 			 mkdir ~/.config/sxhkd
-			 cp examples/sxhkdrc ~/.config/sxhkd
+			 cp ../bspwm/examples/sxhkdrc ~/.config/sxhkd
 			 cd ..
 	- __Optional__: Configure the keybind in __sxhkdrc__ to your liking:
 
@@ -74,7 +77,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 6. Install Picom:
 	- Install __required dependencies__:
 
-			 sudo apt install libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-xinerama0-dev libpixman-1-dev libdbus-1-dev libconfig-dev libgl1-mesa-dev  libpcre2-dev  libevdev-dev uthash-dev libev-dev libx11-xcb-dev
+			 sudo apt install meson libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-xinerama0-dev libpixman-1-dev libdbus-1-dev libconfig-dev libgl1-mesa-dev  libpcre2-dev  libevdev-dev uthash-dev libev-dev libx11-xcb-dev
 	- Clone the repository:
 
 			 git clone https://github.com/ibhagwan/picom.git
@@ -90,23 +93,35 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 			 meson configure -Dprefix=<path> build 
 			 ## To change the install prefix
 			 
-			 ninja -C build install
+			 sudo ninja -C build install
 			 cd ..
 
-7. Install Rofi:
+7. Install Rofi(wip):
 	- Install __required dependencies__:
 
-			 sudo apt install libpango-dev libpangocairo-dev libcairo-dev libcairo-xcb-dev libglib2.0-dev gmodule-2.0-dev gio-unix-2.0-devlibrsvg2.0 libstartup-notification-1.0-dev libxkbcommon-dev libxkbcommon-x11-dev libjpeg-dev libxcb-dev xcb-util-dev xcb-util-wm-dev xcb-util-xrm-dev
-	- Clone the repository:
+			 sudo apt install bison flex libstartup-notification0-dev check autotools-dev libpango1.0-dev librsvg2-bin librsvg2-dev libcairo2-dev libglib2.0-dev libxkbcommon-dev libxkbcommon-x11-dev libjpeg-dev
+	- Get necessary releases:
 
-			 git clone https://github.com/davatorium/rofi.git
-	- Build:
+			 cd ~/Downloads
+			 wget https://github.com/davatorium/rofi/releases/download/1.5.4/rofi-1.5.4.tar.gz
+			 wget https://github.com/libcheck/check/releases/download/0.15.1/check-0.15.1.tar.gz
+	- Build __check__:
+
+			 cd check-0.15.1
+			 ./configure
+			 make
+			 make check
+	- Install __check__:
+
+			 sudo make install
+			 cd ..
+	- Build __rofi__:
 
 			 cd rofi
 			 mkdir build && cd build
 			 ../configure
 			 make
-	- Install:
+	- Install __rofi__:
 
 			 sudo make install
 
