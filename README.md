@@ -215,6 +215,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 sudo dpkg-reconfigure gdm3 #select slim
 		 cd ~/Downloads/blue-sky/slimlock
 
+
 	
 	__NOTE__: If you get ``fatal error: ft2build.h:`` do:
 
@@ -230,6 +231,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 sudo make install
 		 cd ..
 	
+
 	
 	__Theming__:
 
