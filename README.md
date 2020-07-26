@@ -133,29 +133,30 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 sudo apt update && sudo apt install spotify-client
 10. Install spicetify:
 	- Installation:
+
 			 curl -fsSL https://raw.githubusercontent.com/khanhas/spicetify-cli/master/install.sh | sh
 		 	 sudo chmod a+wr /usr/share/spotify
 		 	 sudo chmod a+wr /usr/share/spotify/Apps -R
 	- Launch Spotify using spicetify: 
 
-		 spicetify
-		 spicetify backup apply enable-devtool
-		 spicetify update
+			 spicetify
+		 	 spicetify backup apply enable-devtool
+		 	 spicetify update
 	- Theming:
 
-		 cd ~/Downloads
-		 git clone https://github.com/morpheusthewhite/spicetify-themes.git
-		 cd spicetify-themes
-		 cp -r * ~/spicetify-cli/Themes
-		 cd ~/spicetify-cli/Themes/Dribbblish/
-		 cp dribbblish.js ../../Extensions
-		 spicetify config extensions dribbblish.js
-		 spicetify config current_theme Dribbblish color_scheme base
-		 spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
-		 spicetify apply
-		 spicetify config current_theme Dribbblish
-		 spicetify config color_scheme nord-dark
-		 spicetify apply  
+		 	 cd ~/Downloads
+		 	 git clone https://github.com/morpheusthewhite/spicetify-themes.git
+		 	 cd spicetify-themes
+		 	 cp -r * ~/spicetify-cli/Themes
+		 	 cd ~/spicetify-cli/Themes/Dribbblish/
+		 	 cp dribbblish.js ../../Extensions
+		 	 spicetify config extensions dribbblish.js
+		 	 spicetify config current_theme Dribbblish color_scheme base
+		 	 spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
+		 	 spicetify apply
+		 	 spicetify config current_theme Dribbblish
+		 	 spicetify config color_scheme nord-dark
+		 	 spicetify apply  
 		 
 11. Install SLiM and slimlock:
 12. Install alacritty: 
