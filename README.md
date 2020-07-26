@@ -159,20 +159,20 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 	 spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
 		 	 spicetify apply
 11. Install alacritty: 
-	- Installation:
+	Installation:
 
-		 	 sudo apt install alacritty
-	- Clone the repo: 
+		 sudo apt install alacritty
+	Clone the repo: 
 
-			 cd ~/Downloads
-			 git clone https://github.com/VaughnValle/blue-sky.git
-	- Apply alacritty theme:
+		 cd ~/Downloads
+		 git clone https://github.com/VaughnValle/blue-sky.git
+	Apply alacritty theme:
 
-			 mkdir ~/.config/alacritty
-			 cp blue-sky/alacritty/alacritty.yml ~/.config/alacritty/
-	- __NOTE:__ If you get the ```error: GLSL 3.30 is not supported``` error, do this:
+		 mkdir ~/.config/alacritty
+		 cp blue-sky/alacritty/alacritty.yml ~/.config/alacritty/
+	__NOTE:__ If you get the ```error: GLSL 3.30 is not supported``` error, do this:
 
-			 vim /usr/share/applications/com.alacritty.Alacritty.desktop
+		 vim /usr/share/applications/com.alacritty.Alacritty.desktop
           
 	   and change ```Exec=alacritty`` to ``Exec=bash -c "LIBGL_ALWAYS_SOFTWARE=1 alacritty"``
 12. Apply the desktop wallpaper:
@@ -216,7 +216,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 
 		 sudo vim /usr/include/X11/Xft/Xft.h
 	
-	Change line __39__ to ``#include <freetype2/ft2build.h>" and do:
+	Change line __39__: to ``#include <freetype2/ft2build.h>" <truncated>`` and do:
 
 		 sudo cp /usr/include/freetype2/freetype /usr/include
 
@@ -226,10 +226,10 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 sudo make install
 		 cd ..
 	
-	- Theming:
+	Theming:
 
-			 cd ~/Downloads/blue-sky
-			 sudo cp slim.conf /etc && sudo cp slimlock.conf /etc
-			 sudo cp default /usr/share/slim/themes
+		 cd ~/Downloads/blue-sky
+		 sudo cp slim.conf /etc && sudo cp slimlock.conf /etc
+		 sudo cp default /usr/share/slim/themes
 
 ## Thanks for dropping by!
