@@ -21,9 +21,9 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 
 		 sudo apt upgrade
 3. Install __bspwm__:
-	- Install __required dependencies__:
+	- Install __required dependencies__(vim included):
 
-			 sudo apt install xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
+			 sudo apt install vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
 	- Clone the repository:
 
 			 git clone https://github.com/baskerville/bspwm.git
@@ -123,15 +123,22 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 	- Install __rofi__:
 
 			 sudo make install
-8. Install the vim editor:
+	- Enable and use __rofi__:
 
-		 sudo apt install vim
+			 vim ~/.config/sxhkd/sxhkdrc
 9. Install spotify:
 
 		 curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add - 
 		 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 		 sudo apt update && sudo apt install spotify-client
 10. Install spicetify:
+
+		 curl -fsSL https://raw.githubusercontent.com/khanhas/spicetify-cli/master/install.sh | sh
+		 sudo chmod a+wr /usr/share/spotify
+		 sudo chmod a+wr /usr/share/spotify/Apps -R
 11. Install SLiM and slimlock:
+12. Install alacritty: 
+
+		 sudo apt install alacritty
 ## Thanks for dropping by!
 
