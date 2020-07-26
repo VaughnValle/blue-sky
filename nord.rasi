@@ -1,0 +1,65 @@
+configuration {
+  show-icons: true;
+  font: "SauceCodePro Nerd Font Medium 10";
+  drun-display-format: "{icon} {name}";
+  display-run: " ";
+  display-drun: " ";
+  display-window: " ";
+  modi: "window,run,drun";
+}
+
+* {
+  background-color: #2E3440;
+  bg-alt: #3B4252;
+  fg: #ECEFF4;
+
+  nord-blue-light: #88C0D0;
+  nord-yellow: #A8D7FE;
+
+  border: 0;
+  lines: 12;
+  padding: 0;
+  margin: 0;
+  spacing: 0;
+}
+
+window {
+  width: 30%;
+  transparency: "real";
+}
+
+mainbox {
+  children: [inputbar, listview];
+}
+
+listview {
+  columns: 1;
+}
+
+element {
+  padding: 12;
+  orientation: vertical;
+  text-color: @fg;
+}
+
+element selected {
+  background-color: @bg-alt;
+  text-color: @nord-blue-light;
+}
+
+inputbar {
+  background-color: @background;
+  children: [prompt, entry];
+}
+
+prompt {
+  enabled: true;
+  font: "SauceCodePro Nerd Font 12";
+  padding: 12 0 0 12;
+  text-color: @nord-yellow;
+}
+
+entry {
+  padding: 12;
+  text-color: @nord-yellow;
+}
