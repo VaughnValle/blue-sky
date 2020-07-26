@@ -110,20 +110,20 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 			 ./configure
 			 make
 			 make check
-	- Install __check__:
+	Install __check__:
 
 			 sudo make install
 			 cd ..
-	- Build __rofi__:
+	Build __rofi__:
 
 			 cd rofi
 			 mkdir build && cd build
 			 ../configure
 			 make
-	- Install __rofi__:
+	Install __rofi__:
 
 			 sudo make install
-	- Enable and use __rofi__:
+	Enable and use __rofi__:
 
 			 vim ~/.config/sxhkd/sxhkdrc
 	  
@@ -136,28 +136,28 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 		 sudo apt update && sudo apt install spotify-client
 10. Install spicetify:
-	- Installation:
+	__Installation__:
 
-			 curl -fsSL https://raw.githubusercontent.com/khanhas/spicetify-cli/master/install.sh | sh
-		 	 sudo chmod a+wr /usr/share/spotify
-		 	 sudo chmod a+wr /usr/share/spotify/Apps -R
-	- Launch Spotify using spicetify: 
+		 curl -fsSL https://raw.githubusercontent.com/khanhas/spicetify-cli/master/install.sh | sh
+		 sudo chmod a+wr /usr/share/spotify
+	 	 sudo chmod a+wr /usr/share/spotify/Apps -R
+	__Launch Spotify using spicetify__: 
 
-			 spicetify
-		 	 spicetify backup apply enable-devtool
-		 	 spicetify update
-	- Theming:
+		 spicetify
+		 spicetify backup apply enable-devtool
+		 spicetify update
+	__Theming__:
 
-		 	 cd ~/Downloads
-		 	 git clone https://github.com/morpheusthewhite/spicetify-themes.git
-		 	 cd spicetify-themes
-		 	 cp -r * ~/spicetify-cli/Themes
-		 	 cd ~/spicetify-cli/Themes/Dribbblish/
-		 	 cp dribbblish.js ../../Extensions
-		 	 spicetify config extensions dribbblish.js
-		 	 spicetify config current_theme Dribbblish color_scheme nord-dark
-		 	 spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
-		 	 spicetify apply
+		 cd ~/Downloads
+		 git clone https://github.com/morpheusthewhite/spicetify-themes.git
+	 	 cd spicetify-themes
+	 	 cp -r * ~/spicetify-cli/Themes
+	 	 cd ~/spicetify-cli/Themes/Dribbblish/
+	 	 cp dribbblish.js ../../Extensions
+	 	 spicetify config extensions dribbblish.js
+		 spicetify config current_theme Dribbblish color_scheme nord-dark
+	 	 spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
+	 	 spicetify apply
 11. Install alacritty: 
 	
 	__Installation__:
@@ -171,11 +171,13 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 
 		 mkdir ~/.config/alacritty
 		 cp blue-sky/alacritty/alacritty.yml ~/.config/alacritty/
+	---
 	__NOTE:__ If you get the ```error: GLSL 3.30 is not supported``` error, do this:
 
 		 vim /usr/share/applications/com.alacritty.Alacritty.desktop
           
 	   and change ``Exec=alacritty`` to ``Exec=bash -c "LIBGL_ALWAYS_SOFTWARE=1 alacritty"``
+	---
 12. Apply the desktop wallpaper:
 
 		 sudo apt install feh
