@@ -127,7 +127,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 
 			 vim ~/.config/sxhkd/sxhkdrc
 	  
-	  Change __dmenu__ to:
+	  | Change __dmenu__ to:
 
 			 rofi -modi run,drun,window -show drun -show-icons -sidebar-mode 
 9. Install spotify:
@@ -163,6 +163,6 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 12. Install alacritty: 
 	- Installation:
 
-		 sudo apt install alacritty
+		 	 sudo apt install alacritty
 ## Thanks for dropping by!
 
