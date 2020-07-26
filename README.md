@@ -101,7 +101,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 sudo ninja -C build install
 		 cd ..
 	---  
-	__NOTE:__ Default installation path is /usr/local, use this to change the install prefix:
+	__NOTE:__ Default installation path is ``/usr/local``, use this to change the install prefix:
 
 		 meson configure -Dprefix=<path> build
 
@@ -139,7 +139,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 
 		 vim ~/.config/sxhkd/sxhkdrc
 	  
-	     Change __dmenu__ to:
+	  Change __dmenu__ to:
 
 		 rofi -modi run,drun,window -show drun -show-icons -sidebar-mode 
 9. Install spotify:
