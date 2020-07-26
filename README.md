@@ -200,10 +200,36 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 git clone https://github.com/vim-airline/vim-airline.git
 		 cd vim-airline
 		 cp * -r ~/.vim
-17. Theme rofi
+17. Theme rofi:
 
 		 mkdir ~/.config/rofi
 		 mkdir ~/.config/rofi/themes
 		 cp ~/Downloads/blue-sky/nord.rasi ~/.config/rofi/themes
 		 rofi-theme-selector
+18. Install slim and slimlock:
+
+		 sudo apt install slim libpam0g-dev libxrandr-dev libfreetype6-dev
+		 sudo dpkg-reconfigure gdm3 #select slim
+		 cd ~/Downloads/blue-sky/slimlock
+
+	__NOTE__: If you get ``fatal error: ft2build.h:`` do:
+
+		 sudo vim /usr/include/X11/Xft/Xft.h
+	
+	Change line __39__ to ``#include <freetype2/ft2build.h>" and do:
+
+		 sudo cp /usr/include/freetype2/freetype /usr/include
+
+	Then run:
+		
+		 sudo make
+		 sudo make install
+		 cd ..
+	
+	- Theming:
+
+			 cd ~/Downloads/blue-sky
+			 sudo cp slim.conf /etc && sudo cp slimlock.conf /etc
+			 sudo cp default /usr/share/slim/themes
+
 ## Thanks for dropping by!
