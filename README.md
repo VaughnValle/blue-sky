@@ -172,11 +172,11 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 
 			 mkdir ~/.config/alacritty
 			 cp blue-sky/alacritty/alacritty.yml ~/.config/alacritty/
-        - __NOTE:__ If you get the ```error: GLSL 3.30 is not supported``` error, do this:
+	- __NOTE:__ If you get the ```error: GLSL 3.30 is not supported``` error, do this:
 
 			 vim /usr/share/applications/com.alacritty.Alacritty.desktop
           
-	   and change ```Exec=alacritty``` to ```Exec=bash -c "LIBGL_ALWAYS_SOFTWARE=1 alacritty"
+	   and change ```Exec=alacritty``` to ```Exec=bash -c "LIBGL_ALWAYS_SOFTWARE=1 alacritty"```
 
 ## Thanks for dropping by!
 
