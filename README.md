@@ -44,6 +44,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 vim ~/.config/bspwm/bspwmrc
 
 4. Install __sxhkd__:
+	
 	__Clone the repository__:
 
 		 git clone https://github.com/baskerville/sxhkd.git
@@ -106,6 +107,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 
 	---
 7. Install Rofi:
+	
 	Install __required dependencies__:
 
 		 sudo apt install bison flex libstartup-notification0-dev check autotools-dev libpango1.0-dev librsvg2-bin librsvg2-dev libcairo2-dev libglib2.0-dev libxkbcommon-dev libxkbcommon-x11-dev libjpeg-dev
