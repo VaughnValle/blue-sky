@@ -126,6 +126,10 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 	- Enable and use __rofi__:
 
 			 vim ~/.config/sxhkd/sxhkdrc
+	  
+	  Change __dmenu__ to:
+
+			 rofi -modi run,drun,window -show drun -show-icons -sidebar-mode 
 9. Install spotify:
 
 		 curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add - 
@@ -151,15 +155,13 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 	 cd ~/spicetify-cli/Themes/Dribbblish/
 		 	 cp dribbblish.js ../../Extensions
 		 	 spicetify config extensions dribbblish.js
-		 	 spicetify config current_theme Dribbblish color_scheme base
+		 	 spicetify config current_theme Dribbblish color_scheme nord-dark
 		 	 spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
 		 	 spicetify apply
-		 	 spicetify config current_theme Dribbblish
-		 	 spicetify config color_scheme nord-dark
-		 	 spicetify apply  
 		 
 11. Install SLiM and slimlock:
 12. Install alacritty: 
+	- Installation:
 
 		 sudo apt install alacritty
 ## Thanks for dropping by!
