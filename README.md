@@ -193,5 +193,17 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 15. Install Powerlevel10k:
 
 		 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-## Thanks for dropping by!
+16. Theme vim:
 
+		 cd ~/Downloads
+		 cp blue-sky/nord.vim ~/.vim/colors
+		 git clone https://github.com/vim-airline/vim-airline.git
+		 cd vim-airline
+		 cp * -r ~/.vim
+17. Theme rofi
+
+		 mkdir ~/.config/rofi
+		 mkdir ~/.config/rofi/themes
+		 cp ~/Downloads/blue-sky/nord.rasi ~/.config/rofi/themes
+		 rofi-theme-selector
+## Thanks for dropping by!
