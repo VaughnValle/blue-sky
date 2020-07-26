@@ -21,6 +21,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 
 		 sudo apt upgrade
 3. Install __bspwm__:
+
 	Install __required dependencies__(vim included):
 
 		 sudo apt install vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
@@ -62,6 +63,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 	
 	---  
 	 __NOTE__: Make sure the __terminal emulator__ used in the config file is installed as the terminal will be the only way we can interact with bspwm upon startup after a fresh installation
+
 	---
 5. Install Polybar:
 	Install __required dependencies__:
