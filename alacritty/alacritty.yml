@@ -107,7 +107,7 @@ font:
     #   - (Linux) monospace
     #   - (Windows) Consolas
     #family: Curie
-     family: Source Code Pro Light
+     family: Source Code Pro
     # The `style` can be specified to pick a specific face.
     #style: Retina
 
@@ -120,7 +120,7 @@ font:
     family: Source Code Pro 
 
     # The `style` can be specified to pick a specific face.
-    #style: Retina
+    style: Bold
 
   # Italic font face
   italic:
@@ -128,10 +128,10 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Curie
+    family: Source Code Pro
 
     # The `style` can be specified to pick a specific face.
-    #style: Italic
+    style: Italic
 
   # Point size
   size: 8

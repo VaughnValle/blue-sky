@@ -164,5 +164,18 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 	- Installation:
 
 		 	 sudo apt install alacritty
+	- Clone the repo: 
+
+			 cd ~/Downloads
+			 git clone https://github.com/VaughnValle/blue-sky.git
+	- Apply alacritty theme:
+
+			 mkdir ~/.config/alacritty
+			 cp blue-sky/alacritty/alacritty.yml ~/.config/alacritty/
+          __NOTE:__ If you get the ```error: GLSL 3.30 is not supported``` error, do this:
+
+			 vim /usr/share/applications/com.alacritty.Alacritty.desktop
+          and change ```Exec=alacritty``` to ```Exec=bash -c "LIBGL_ALWAYS_SOFTWARE=1 alacritty"
+
 ## Thanks for dropping by!
 
