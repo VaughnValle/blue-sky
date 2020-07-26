@@ -214,9 +214,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 sudo apt install slim libpam0g-dev libxrandr-dev libfreetype6-dev
 		 sudo dpkg-reconfigure gdm3 #select slim
 		 cd ~/Downloads/blue-sky/slimlock
-
-
-	
+	---
 	__NOTE__: If you get ``fatal error: ft2build.h:`` do:
 
 		 sudo vim /usr/include/X11/Xft/Xft.h
@@ -230,9 +228,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 sudo make
 		 sudo make install
 		 cd ..
-	
-
-	
+	---	
 	__Theming__:
 
 		 cd ~/Downloads/blue-sky
