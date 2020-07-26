@@ -179,5 +179,19 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 
 		 sudo apt install feh
 		 echo 'feh --bg-fill $HOME/Downloads/blue-sky/wallpapers/blue3.png' >> ~/.config/bspwm/bspwmrc
+13. Configure polybar:
+
+		 mkdir ~/.config/polybar
+		 cp * -r ~/Downloads/blue-sky/polybar ~/.config/polybar
+		 echo '~/.config/polybar/./launch.sh' >> ~/.config/bspwm/bspwmrc
+		 cd ~/Downloads/blue-sky/polybar/fonts/
+		 cp * /usr/share/fonts/truetype/
+14. Install Oh My ZSH!:
+
+		 sudo apt install zsh
+		 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)
+15. Install Powerlevel10k:
+
+		 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ## Thanks for dropping by!
 
