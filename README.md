@@ -158,8 +158,6 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 	 spicetify config current_theme Dribbblish color_scheme nord-dark
 		 	 spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
 		 	 spicetify apply
-		 
-11. Install SLiM and slimlock:
 12. Install alacritty: 
 	- Installation:
 
