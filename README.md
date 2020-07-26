@@ -159,6 +159,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 	 spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
 		 	 spicetify apply
 11. Install alacritty: 
+	
 	Installation:
 
 		 sudo apt install alacritty
