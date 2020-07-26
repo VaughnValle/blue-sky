@@ -160,14 +160,14 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 	 spicetify apply
 11. Install alacritty: 
 	
-	- Installation:
+	__Installation__:
 
 		 sudo apt install alacritty
-	- Clone the repo: 
+	__Clone the repo__: 
 
 		 cd ~/Downloads
 		 git clone https://github.com/VaughnValle/blue-sky.git
-	- Apply alacritty theme:
+	__Apply alacritty theme__:
 
 		 mkdir ~/.config/alacritty
 		 cp blue-sky/alacritty/alacritty.yml ~/.config/alacritty/
@@ -209,7 +209,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 rofi-theme-selector
 18. Install slim and slimlock:
 
-	- Installation:
+	__Installation__:
 		 sudo apt install slim libpam0g-dev libxrandr-dev libfreetype6-dev
 		 sudo dpkg-reconfigure gdm3 #select slim
 		 cd ~/Downloads/blue-sky/slimlock
@@ -228,7 +228,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 sudo make install
 		 cd ..
 	
-	- Theming:
+	__Theming__:
 
 		 cd ~/Downloads/blue-sky
 		 sudo cp slim.conf /etc && sudo cp slimlock.conf /etc
