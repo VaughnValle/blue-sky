@@ -174,7 +174,10 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 
 			 vim /usr/share/applications/com.alacritty.Alacritty.desktop
           
-	   and change ```Exec=alacritty``` to ```Exec=bash -c "LIBGL_ALWAYS_SOFTWARE=1 alacritty"```
+	   and change ```Exec=alacritty`` to ``Exec=bash -c "LIBGL_ALWAYS_SOFTWARE=1 alacritty"``
+12. Apply the desktop wallpaper:
 
+		 sudo apt install feh
+		 echo 'feh --bg-fill $HOME/Downloads/blue-sky/wallpapers/blue3.png' >> ~/.config/bspwm/bspwmrc
 ## Thanks for dropping by!
 
