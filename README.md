@@ -6,11 +6,20 @@ Love the content? Consider Subscribing: https://tinyurl.com/ydx35uwd
 [![Cerulean - 50 Shades of Blue](https://raw.githubusercontent.com/VaughnValle/demo/master/THUMA.png)](https://www.youtube.com/watch?v=Le_gTAlBNO8)
 
 ## Dependencies
-### BSPWM
-### SXHKD
-### Polybar
-### Picom
-### Rofi
+* bspwm
+* sxhkd
+* polybar
+* picom
+* rofi
+* spotify-client
+* spicetify
+* alacritty
+* zsh
+* oh my zsh!
+* powerlevel10k
+* vim
+* slim
+* slimlock
 
 ## Installation Steps (Ubuntu/Pop! OS 20.04)
 __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
