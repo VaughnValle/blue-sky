@@ -136,6 +136,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 		 sudo apt update && sudo apt install spotify-client
 10. Install spicetify:
+
 	__Installation__:
 
 		 curl -fsSL https://raw.githubusercontent.com/khanhas/spicetify-cli/master/install.sh | sh
@@ -177,6 +178,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 vim /usr/share/applications/com.alacritty.Alacritty.desktop
           
 	and change ``Exec=alacritty`` to ``Exec=bash -c "LIBGL_ALWAYS_SOFTWARE=1 alacritty"``
+
 	---
 12. Apply the desktop wallpaper:
 
