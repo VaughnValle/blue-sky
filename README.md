@@ -1,9 +1,18 @@
-# Cerulean - 50 Shades of Blue (WIP)
-
-## Preview
-Love the content? Consider Subscribing: https://tinyurl.com/ydx35uwd
+# Cerulean
+<p align="center">
+  <img src="https://img.shields.io/badge/MAINTAINED-YES-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/LICENSE-MIT-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/LINUX-YES-yellow?style=for-the-badge">
+  <img src="https://img.shields.io/badge/WINDOWS-NO-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/MAC-NO-blueviolet?style=for-the-badge">
+</p>
 
 [![Cerulean - 50 Shades of Blue](https://raw.githubusercontent.com/VaughnValle/demo/master/THUMA.png)](https://www.youtube.com/watch?v=Le_gTAlBNO8)
+
+Cerulean is a minimalistic Linux setup for Pop! OS using various shades of blue. This setup uses BSPWM as the tiling window manager.
+
+
+Love the content? Consider Subscribing: https://tinyurl.com/ydx35uwd
 
 ## Dependencies
 * bspwm
