@@ -219,10 +219,11 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 13. Configure polybar:
 
 		 mkdir ~/.config/polybar
-		 cp * -r ~/Downloads/blue-sky/polybar ~/.config/polybar
+		 cd ~/Downloads/blue-sky/polybar
+		 cp * -r ~/.config/polybar
 		 echo '~/.config/polybar/./launch.sh' >> ~/.config/bspwm/bspwmrc
-		 cd ~/Downloads/blue-sky/polybar/fonts/
-		 cp * /usr/share/fonts/truetype/
+		 cd fonts
+		 sudo cp * /usr/share/fonts/truetype/
 14. Install Oh My ZSH!:
 
 		 sudo apt install zsh
