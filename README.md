@@ -239,14 +239,21 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 git clone https://github.com/vim-airline/vim-airline.git
 		 cd vim-airline
 		 cp * -r ~/.vim
+		 cd ~/Downloads
+		 git clone https://github.com/vim-airline/vim-airline-themes.git
+		 cd vim-airline-themes
+		 cp * -r ~/.vim
 		 echo 'colorscheme nord' >> ~/.vimrc
 		 echo 'let g:airline_theme='base16' >> ~/.vimrc
 17. Theme rofi:
 
-		 mkdir ~/.config/rofi
-		 mkdir ~/.config/rofi/themes
+		 mkdir -p ~/.config/rofi/themes
 		 cp ~/Downloads/blue-sky/nord.rasi ~/.config/rofi/themes
-		 rofi-theme-selector
+		 rofi-theme-selector #preview the "nord theme" with Enter and apply it with Alt+a
+		 
+		 # modify keybindings
+		 vim ~/.config/sxhkd/sxhkdrc
+		 # replace dmenu with rofi -show drun
 18. Install slim and slimlock:
 
 	Installation __slim__ and __slimlock__:
