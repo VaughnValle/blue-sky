@@ -47,6 +47,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 sudo apt install build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
 	Clone the repository:
 
+		 cd ~/Downloads
 		 git clone https://github.com/baskerville/bspwm.git
 	Compile and install bspwm:
 			 
