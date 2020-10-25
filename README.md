@@ -233,11 +233,14 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 16. Theme vim:
 
+		 mkdir -p ~/.vim/colors
 		 cd ~/Downloads
 		 cp blue-sky/nord.vim ~/.vim/colors
 		 git clone https://github.com/vim-airline/vim-airline.git
 		 cd vim-airline
 		 cp * -r ~/.vim
+		 echo 'colorscheme nord' >> ~/.vimrc
+		 echo 'let g:airline_theme='base16' >> ~/.vimrc
 17. Theme rofi:
 
 		 mkdir ~/.config/rofi
