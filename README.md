@@ -258,9 +258,9 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 
 	Installation __slim__ and __slimlock__:
 	
-		 sudo apt install slim libpam0g-dev libxrandr-dev libfreetype6-dev
+		 sudo apt install slim libpam0g-dev libxrandr-dev libfreetype6-dev libimlib2-dev libxft-dev
 		 sudo dpkg-reconfigure gdm3 #select slim
-		 cd ~/Downloads/blue-sky/slimlock
+		 
 	---
 	__NOTE:__ If you get ``fatal error: ft2build.h:`` do:
 
