@@ -35,8 +35,8 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 60
-    y: 50
+    x: 30
+    y: 30
 
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: true
@@ -230,7 +230,7 @@ colors:
 #   - Linear
 #
 # Specifying a `duration` of `0` will disable the visual bell.
-visual_bell:
+bell:
   animation: EaseOutExpo
   duration: 1
   color: '0x333333'
@@ -300,7 +300,7 @@ selection:
   save_to_clipboard: false
 
 # Allow terminal applications to change Alacritty's window title.
-dynamic_title: true
+window.dynamic_title: true
 
 cursor:
   # Cursor style
