@@ -245,7 +245,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 cd vim-airline-themes
 		 cp * -r ~/.vim
 		 echo 'colorscheme nord' >> ~/.vimrc
-		 echo 'let g:airline_theme='base16' >> ~/.vimrc
+		 echo 'let g:airline_theme='base16'' >> ~/.vimrc
 17. Theme rofi:
 
 		 mkdir -p ~/.config/rofi/themes
