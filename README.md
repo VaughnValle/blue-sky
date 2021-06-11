@@ -9,7 +9,7 @@
 
 Cerulean is a minimalistic Linux setup for Pop! OS using various shades of blue. This setup uses BSPWM as the tiling window manager.
 
-Love the content? Help me reach my goal of getting my laptop integrated GPU; any amount helps :)
+Love the content? Help me reach my goal of upgrading my laptop integrated GPU; any amount helps :)
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8QCEHJMN43VAE)
 
