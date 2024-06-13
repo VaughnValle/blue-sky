@@ -140,6 +140,8 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 cd ~/Downloads
 		 wget https://github.com/davatorium/rofi/releases/download/1.5.4/rofi-1.5.4.tar.gz
 		 wget https://github.com/libcheck/check/releases/download/0.15.1/check-0.15.1.tar.gz
+   		 tar -xvzf rofi-1.5.4.tar.gz
+   		 tar -xvzf check-0.15.1.tar.gz
 	Build check:
 
 		 cd check-0.15.1
@@ -148,7 +150,7 @@ __NOTE:__ This guide uses ``~/Downloads`` as the default path for cloning repos
 		 make check
 	Install check:
 
-		 sudo make install
+		 sudo make insttar -xvzfall
 		 cd ..
 	Build __rofi__:
 
